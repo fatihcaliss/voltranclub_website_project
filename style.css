@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #F63232;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+
+  }
+header h1 {
+    color: white;
+    border: 8px solid white;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px;
+
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+  }
+
+.banner img {
+    width: 100%;
+}
+.main-navbar ul {
+    display: flex;
+    list-style: none;
+    background-color: #F4F4F4;
+    padding: 30px 20px;
+    justify-content: center;
+    white-space: nowrap;
+}
+li {
+    margin: 0px 50px;
+    flex: 1;
+}
+
+#nasi {
+    color: #F63232;
+}
+.main-navbar ul a {
+    text-decoration: none;
+    color: #4B4B4B;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.descript h1{
+    color: #F63232;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.descript p{
+    line-height: 2em;
+}
+
+p{
+    font-size: 18px;
+}
+  
+.descript p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+article.descript{
+    margin: auto;
+    text-align: justify;
+    padding: 60px 20px;
+    color: #4B4B4B;
+}
+
+article.artic-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    /* display: inline-block; */
+}
+
+article.artic-imgs img {
+    width: 400px;
+    padding: 80px  10px;
+}
+
+section.join{
+    background: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4B4B4B;
+}
+nav {
+    position: sticky;
+    top: 110px;
+}
+input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+#submit {
+    border: 4px solid #71d300;
+    margin: 20px 0px;
+}
+section.join>h2 {
+    margin: 20px 0px;
+    font-size: 36px;
+}
+
+footer {
+    text-align: center;
+    background-color: #F63232;
+    padding: 30px 0px;
+    color: white;
+}
+#im1:hover, #im2:hover{
+    transform: translateY(-5px);
+    z-index: -1;
+}
+
+#mailarea:focus {
+    border: dashed 4px #4B4B4B;
+    outline:none;
+}
+@media (max-width:700px) {
+    .main-navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-navbar ul li {
+        margin-bottom: 15px;
+    }
+    article.artic-imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+    article.artic-imgs img {
+        padding: 20px 0px;
+    }
+}
